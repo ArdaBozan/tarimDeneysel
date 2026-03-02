@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fdf5;
+  --foreground: #1a2e05;
+  --primary: #2d6a1e;
+  --primary-light: #4a9e35;
+  --primary-dark: #1b4a10;
+  --secondary: #f59e0b;
+  --accent: #065f46;
+  --muted: #f1f5e9;
+  --muted-foreground: #6b7c5a;
+  --card: #ffffff;
+  --card-foreground: #1a2e05;
+  --border: #d4e4c8;
+  --ring: #2d6a1e;
+  --destructive: #dc2626;
+  --success: #16a34a;
+  --warning: #f59e0b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f1a0a;
+    --foreground: #e8f0e0;
+    --primary: #4a9e35;
+    --primary-light: #6bc452;
+    --primary-dark: #2d6a1e;
+    --muted: #1a2e12;
+    --muted-foreground: #9aac8a;
+    --card: #162210;
+    --card-foreground: #e8f0e0;
+    --border: #2a4420;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, Arial, Helvetica, sans-serif);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}

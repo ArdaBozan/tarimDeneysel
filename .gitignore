@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Node.js
+node_modules/
+.next/
+out/
+.vercel
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Uploads
+backend/uploads/
+!backend/uploads/.gitkeep
+
+# AI Models
+backend/ai/models/
+!backend/ai/models/.gitkeep
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+.env.production
